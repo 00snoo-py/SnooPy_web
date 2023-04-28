@@ -157,7 +157,7 @@ function App() {
             <div className={style.window_contents}>
               <div className={style.content_title}>역할</div>
               <div className="">
-                <div className={style.window_part}>He can't everything!!</div>
+                <div className={style.window_part}>Frontend Developer</div>
               </div>
             </div>
 
