@@ -8,6 +8,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-color: rgb(72, 121, 255);
 }
 
 .symbol {
@@ -67,16 +69,16 @@
   font-weight: 600;
   font-size: 60px;
   margin-bottom: 20px;
-}
-.py {
-  color: rgb(72, 121, 255)
+  color: white;
+  
 }
 
 .info {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: rgb(46, 47, 56);
+  /* color: rgb(46, 47, 56); */
+  color: white;
 }
 
 strong {
@@ -92,5 +94,84 @@ strong {
   font-family: 'Lexend', sans-serif;
   font-weight: 600;
   font-size: 30px;
+  margin-bottom: 100px;
 }
 
+.contain {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  padding: 10px;
+  margin: 20px;
+  margin-right: 200px;
+  margin-left: 200px;
+  border-radius: 20px;
+  /* border: rgba(58, 58, 66, 0.26) 0.2px solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_contain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_info {
+  position: absolute;
+  margin-right: 40px;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  color: transparent;
+  border-radius: 100%;
+  transition: all;
+  transition-duration: .3s;
+}
+.card_info:hover{
+  transition: all;
+  transition-duration: .3s;
+  color: white;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  backdrop-filter: blur(2px) brightness(70%);
+}
+
+.card_name {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+.card_nickname {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  margin-left: 3px;
+}
+
+.card_work {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 10px;
+  width: 100px;
+}
