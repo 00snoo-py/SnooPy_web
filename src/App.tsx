@@ -1,17 +1,65 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import style from './App.module.css'
-import Nav from './components/Nav/nav'
 
 import SnooPy from '/imgs/snoo-py.png'
 import GBSW from '/imgs/symbol-white.png'
+import GBSW_ONLY from '/imgs/symbol-only.png'
 import Arrow from '/imgs/white-arrow.png'
 import BG from '/imgs/bg.jpg'
+import Ptery from '/imgs/ptery.png'
+import Goorm from '/imgs/goorm.jpg'
+import Logo from '/imgs/snoo-py.png'
 
 function App() {
 
+  const [scrollPos, setScrollPos] = useState('')
+  const updateScroll = () => {
+    setScrollPos(window.scrollY || document.documentElement.scrollTop);
+  }
+  useEffect(()=>{
+    window.addEventListener('scroll', updateScroll)
+  })
+
+  const getMain = () => {
+     window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+  const getMembers = () => {
+     window.scrollTo({
+      top: 1150,
+      behavior: "smooth",
+    })
+  }
+  const getProjects = () => {
+     window.scrollTo({
+      top: 2100,
+      behavior: "smooth",
+    })
+  }
+  const getAwards = () => {
+     window.scrollTo({
+      top: 3000,
+      behavior: "smooth",
+    })
+  }
+
   return (
     <>
-      <Nav />
+      <div className={ scrollPos < 100 ? style.top_nav : style.down_nav }>
+        <div className={style.nav_title}>
+          <span className={style.front}>SNOO</span>
+          <span className={ scrollPos < 100 ? style.back : style.down_back }>.PY</span>
+        </div>
+
+        <div className={style.menu}>
+          <button onClick={getMain} className={ scrollPos < 100 ? style.item : style.down_item }>메인</button>
+          <button onClick={getMembers} className={ scrollPos < 100 ? style.item : style.down_item }>멤버</button>
+          <button onClick={getProjects} className={ scrollPos < 100 ? style.item : style.down_item }>프로젝트</button>
+          <button onClick={getAwards} className={ scrollPos < 100 ? style.item : style.down_item }>수상내역</button>
+        </div>
+      </div>
 
       <img className={style.bg} src={BG} alt="" />
       <div className={style.header}>
@@ -108,7 +156,52 @@ function App() {
       </div>
 
       <div className={style.sub_title}>Projects</div>
-      
+      <div className={style.contain}>
+        <div className={style.pj_card}>
+          <img className={style.pj_img} src={Ptery} alt="" />
+          <div className="">
+            <a href='https://github.com/00snoo-py/Ptery' className={style.pj_title}>Ptery</a>
+            <div className={style.pj_info}>차세대 애니 추천 서비스입니다.</div>
+            <div className={style.pj_tag}>#React #Typescript #Tailwindcss</div>
+          </div>
+        </div>
+
+        <div className={style.pj_card}>
+          <div className={style.more}>
+            <div className={style.dot} />
+            <div className={style.dot} />
+            <div className={style.dot} />
+          </div>
+          <div className="">
+            <a href='https://github.com/00snoo-py' className={style.pj_title}>More</a>
+            <div className={style.pj_info}>팀 깃허브에서 더 많은 정보를 알아보세요.</div>
+            <div className={style.pj_tag}>#Github #Web</div>
+          </div>
+        </div>
+      </div>
+
+      <div className={style.sub_title}>Awards</div>
+      <div className={style.aw_card}>
+        <img className={style.aw_img} src={Goorm} alt="" />
+        <div>
+          <div className={style.aw_state}>Grand Prize</div>
+          <div className={style.aw_title}>2023 구름 하이스쿨 알고리즘 챌린지</div>
+          <div className={style.aw_member}>손보석</div>
+        </div>
+      </div>
+
+      <div className={style.m}></div>
+
+      <footer className={style.footer}>
+        <div className={style.footer_front}>
+          <div className={style.footer_snoo}>SNOO</div>
+          <div className={style.footer_py}>.PY</div>
+          <img className={style.footer_gbsw} src={GBSW_ONLY} alt="" />
+        </div>
+        <div className={style.footer_back}>
+          ⓒ 2023. SNOO.PY all rights reserved
+        </div>
+      </footer>
     </>
   )
 }
