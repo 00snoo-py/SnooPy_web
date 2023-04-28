@@ -216,7 +216,7 @@ function App() {
       <div className={style.header}>
         <div className={style.left}>
           <div className={style.title}>SNOO<span className={style.py}>.PY</span></div>
-          <div className={style.info}>쉬운 것, 어려운 것 가리지 않고 무엇이든 도전하는<br/><strong>경북소프트웨어고등 학교</strong>의 청소년 개발 팀입니다.</div>
+          <div className={style.info}>쉬운 것, 어려운 것 가리지 않고 무엇이든 도전하는<br/><strong>경북소프트웨어고등학교</strong>의 청소년 개발 팀입니다.</div>
         </div>
 
         <div className={style.middle}>
