@@ -5,6 +5,7 @@ import Nav from './components/Nav/nav'
 import SnooPy from '/imgs/snoo-py.png'
 import GBSW from '/imgs/symbol-white.png'
 import Arrow from '/imgs/white-arrow.png'
+import BG from '/imgs/bg.jpg'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
       <Nav />
 
+      <img className={style.bg} src={BG} alt="" />
       <div className={style.header}>
         <div className={style.left}>
           <div className={style.title}>SNOO<span className={style.py}>.PY</span></div>
@@ -91,8 +93,21 @@ function App() {
             </div>
           </div>
 
+          <div className={style.card}>
+            <div className={style.img_contain}>
+              <div className={style.card_img_white} />
+            </div>
+            <div className="">
+              <div className={style.card_work}></div>
+              <div className={style.card_name}></div>
+              <div className={style.card_nickname}></div>
+            </div>
+          </div>
+
         </div>
       </div>
+
+      <div className={style.sub_title}>Projects</div>
       
     </>
   )
