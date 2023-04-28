@@ -427,3 +427,102 @@ strong {
   font-size: 15px;
 }
 
+.window_contain {
+  width: 100vw;
+  height: 100vh;
+  z-index: 60;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: brightness(80%) blur(8px);
+}
+
+.window {
+  width: 800px;
+  height: 900px;
+  background: white;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.window::-webkit-scrollbar {
+  display: none;
+}
+
+.header_img {
+  width: 800px;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+}
+
+.window_header {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.header_profile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-top: -50px;
+  margin-right: 50px;
+}
+
+.window_name {
+  width: 400px;
+  margin-top: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}
+.window_github {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.window_menu {
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+}
+.window_close {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  background: rgb(255, 59, 59);
+  cursor: pointer;
+}
+.window_close_y {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 100%;
+  background: rgb(243, 255, 68);
+  cursor: pointer;
+}
+.window_close_g {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: rgb(65, 255, 59);
+  cursor: pointer;
+}
+
+.window_about {
+  width: 350px;
+  margin-top: 20px;
+  padding: 15px;
+  border:rgb(223, 223, 223) 0.5px solid;
+  border-radius: 20px;
+}

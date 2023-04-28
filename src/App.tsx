@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import style from './App.module.css'
 
-import SnooPy from '/imgs/snoo-py.png'
+// import SnooPy from '/imgs/snoo-py.png'
+// import Logo from '/imgs/snoo-py.png'
 import GBSW from '/imgs/symbol-white.png'
 import GBSW_ONLY from '/imgs/symbol-only.png'
 import Arrow from '/imgs/white-arrow.png'
@@ -9,11 +10,11 @@ import BG from '/imgs/bg.jpg'
 import Ptery from '/imgs/ptery.png'
 import Goorm from '/imgs/goorm.jpg'
 import CodeFair2022  from '/imgs/codefair_2022.jpg'
-import Logo from '/imgs/snoo-py.png'
 
 function App() {
 
-  const [scrollPos, setScrollPos] = useState('')
+  const [profileWindow, setProfileWindow] = useState('')
+  const [scrollPos, setScrollPos] = useState(0)
   const updateScroll = () => {
     setScrollPos(window.scrollY || document.documentElement.scrollTop);
   }
@@ -48,6 +49,39 @@ function App() {
 
   return (
     <>
+      { profileWindow === '김정윤' ?
+        <div className={style.window_contain}></div>
+      : null }
+      { profileWindow === '손보석' ?
+        <div className={style.window_contain}>
+          <div className={style.window}>
+            <img className={style.header_img} src="https://solved.ac/_next/image?url=https%3A%2F%2Fstatic.solved.ac%2Fprofile_bg%2Fquery-mage%2Fquery-mage.png&w=1920&q=75" alt="" />
+            <div className={style.window_header}>
+              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/51194584?v=4" alt="" />
+              <div className="">
+                <div className={style.window_name}>손보석</div>
+                <div className={style.window_github}>dya_only</div>
+                <div className={style.window_about}>풀스택 개발자를 하고 있다고 생각합니다(?)</div>
+              </div>
+            </div>
+          </div>
+          <div className={style.window_menu}>
+            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+          </div>
+        </div>
+      : null }
+      { profileWindow === '김동영' ?
+        <div className={style.window_contain}></div>
+      : null }
+      { profileWindow === '변예현' ?
+        <div className={style.window_contain}></div>
+      : null }
+      { profileWindow === '김도희' ?
+        <div className={style.window_contain}></div>
+      : null }
+
       <div className={ scrollPos < 100 ? style.top_nav : style.down_nav }>
         <div className={style.nav_title}>
           <span className={style.front}>SNOO</span>
@@ -66,7 +100,7 @@ function App() {
       <div className={style.header}>
         <div className={style.left}>
           <div className={style.title}>SNOO<span className={style.py}>.PY</span></div>
-          <div className={style.info}>쉬운 것, 어려운 것 가리지 않고 무엇이든 도전하는<br/><strong>경북소프트웨어고등학교</strong>의 청소년 개발 팀입니다.</div>
+          <div className={style.info}>쉬운 것, 어려운 것 가리지 않고 무엇이든 도전하는<br/><strong>경북소프트웨어고등 학교</strong>의 청소년 개발 팀입니다.</div>
         </div>
 
         <div className={style.middle}>
@@ -85,7 +119,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/108207397?v=4" alt="" />
-              <div className={style.card_info}>팀 리더</div>
+              <div onClick={() => setProfileWindow('김정윤')} className={style.card_info}>팀 리더</div>
             </div>
             <div className="">
               <div className={style.card_work}>Developer</div>
@@ -97,7 +131,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/51194584?v=4" alt="" />
-              <div className={style.card_info}>변예현 따까리</div>
+              <div onClick={() => setProfileWindow('손보석')} className={style.card_info}>변예현 따까리</div>
             </div>
             <div className="">
               <div className={style.card_work}>Developer</div>
@@ -109,7 +143,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/83718994?v=4" alt="" />
-              <div className={style.card_info}>의문의 임베디드 장인</div>
+              <div onClick={() => setProfileWindow('김동영')} className={style.card_info}>의문의 임베디드 장인</div>
             </div>
             <div className="">
               <div className={style.card_work}>Secure & Embedded</div>
@@ -121,7 +155,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
-              <div className={style.card_info}>낙하산</div>
+              <div onClick={() => setProfileWindow('변예현')} className={style.card_info}>낙하산</div>
             </div>
             <div className="">
               <div className={style.card_work}>Developer</div>
@@ -133,7 +167,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/126975038?v=4" alt="" />
-              <div className={style.card_info}>dohe</div>
+              <div onClick={() => setProfileWindow('김도희')} className={style.card_info}>dohe</div>
             </div>
             <div className="">
               <div className={style.card_work}>Designer</div>
