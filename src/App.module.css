@@ -353,6 +353,7 @@ strong {
 
 .aw_card {
   margin: 20px;
+  margin-bottom: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -380,6 +381,7 @@ strong {
   font-family: 'Noto Sans KR', sans-serif;
   font-weight: 600;
   font-size: 23px;
+  width: 200px;
 }
 .aw_member {
   font-family: 'Noto Sans KR', sans-serif;

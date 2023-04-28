@@ -8,6 +8,7 @@ import Arrow from '/imgs/white-arrow.png'
 import BG from '/imgs/bg.jpg'
 import Ptery from '/imgs/ptery.png'
 import Goorm from '/imgs/goorm.jpg'
+import CodeFair2022  from '/imgs/codefair_2022.jpg'
 import Logo from '/imgs/snoo-py.png'
 
 function App() {
@@ -187,6 +188,15 @@ function App() {
           <div className={style.aw_state}>Grand Prize</div>
           <div className={style.aw_title}>2023 구름 하이스쿨 알고리즘 챌린지</div>
           <div className={style.aw_member}>손보석</div>
+        </div>
+      </div>
+
+      <div className={style.aw_card}>
+        <img className={style.aw_img} src={CodeFair2022} alt="" />
+        <div>
+          <div className={style.aw_state}>Grand Prize</div>
+          <div className={style.aw_title}>2023 한국 코드페어 해커톤 고등부</div>
+          <div className={style.aw_member}>김동영</div>
         </div>
       </div>
 
