@@ -150,7 +150,7 @@ function App() {
               <div className="">
                 <div className={style.window_name}>변예현</div>
                 <a href="https://github.com/yehyun207" target="_blank" className={style.window_github}>@yehyun</a>
-                <div className={style.window_about}>좀있다가 나중에</div>
+                <div className={style.window_about}>밀양 변씨 원탑 개발자</div>
               </div>
             </div>
 
