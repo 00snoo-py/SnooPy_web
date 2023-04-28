@@ -144,7 +144,7 @@ function App() {
       { profileWindow === '변예현' ?
         <div className={style.window_contain}>
           <div className={style.window}>
-            <img className={style.header_img} src="https://img.onnada.com/2023/0413/662034559_a72c8201_852757.gif" alt="" />
+            <img className={style.header_img} src="https://38.media.tumblr.com/f0a1cb458b0f80304686f7dac3ebc5e6/tumblr_n750sqHBFZ1s5h198o1_500.gif" alt="" />
             <div className={style.window_header}>
               <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
               <div className="">
@@ -157,8 +157,7 @@ function App() {
             <div className={style.window_contents}>
               <div className={style.content_title}>역할</div>
               <div className="">
-                <div className={style.window_part}>Frontend Developer</div>
-                <div className={style.window_part}>Clang Engineer</div>
+                <div className={style.window_part}>He can't everything!!</div>
               </div>
             </div>
 
@@ -231,6 +230,7 @@ function App() {
       </div>
 
       <div className={style.sub_title}>Members</div>
+      <div className={style.sub_info}>프로필 이미지를 클릭하면 상세 정보를 볼 수 있습니다.</div>
       <div className={style.contain_contain}>
         <div className={style.contain}>
           <div className={style.card}>
@@ -248,7 +248,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/51194584?v=4" alt="" />
-              <div onClick={() => setProfileWindow('손보석')} className={style.card_info}>변예현 형</div>
+              <div onClick={() => setProfileWindow('손보석')} className={style.card_info}>변예현의 스승</div>
             </div>
             <div className="">
               <div className={style.card_work}>Developer</div>
@@ -272,7 +272,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
-              <div onClick={() => setProfileWindow('변예현')} className={style.card_info}>낙하산</div>
+              <div onClick={() => setProfileWindow('변예현')} className={style.card_info}>손보석의 제자</div>
             </div>
             <div className="">
               <div className={style.card_work}>Developer</div>
@@ -312,7 +312,7 @@ function App() {
         <div className={style.pj_card}>
           <img className={style.pj_img} src={Ptery} alt="" />
           <div className="">
-            <a href='https://github.com/00snoo-py/Ptery' className={style.pj_title}>Ptery</a>
+            <a href='https://github.com/00snoo-py/Ptery' target="_blank" className={style.pj_title}>Ptery</a>
             <div className={style.pj_info}>차세대 애니 추천 서비스입니다.</div>
             <div className={style.pj_tag}>#React #Typescript #Tailwindcss</div>
           </div>
@@ -325,7 +325,7 @@ function App() {
             <div className={style.dot} />
           </div>
           <div className="">
-            <a href='https://github.com/00snoo-py' className={style.pj_title}>More</a>
+            <a href='https://github.com/00snoo-py' target="_blank" className={style.pj_title}>More</a>
             <div className={style.pj_info}>팀 깃허브에서 더 많은 정보를 알아보세요.</div>
             <div className={style.pj_tag}>#Github #Web</div>
           </div>

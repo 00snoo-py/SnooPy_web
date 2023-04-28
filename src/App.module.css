@@ -202,6 +202,16 @@ strong {
   margin-top: 200px;
   margin-bottom: 100px;
 }
+.sub_info {
+  margin-top: -100px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
 
 .contain {
   width: 100vw;
