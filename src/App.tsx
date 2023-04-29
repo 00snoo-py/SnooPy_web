@@ -33,7 +33,7 @@ function App() {
   }
   const getMembers = () => {
      window.scrollTo({
-      top: 1150,
+      top: 1100,
       behavior: "smooth",
     })
   }
@@ -45,7 +45,7 @@ function App() {
   }
   const getAwards = () => {
      window.scrollTo({
-      top: 3000,
+      top: 2700,
       behavior: "smooth",
     })
   }
