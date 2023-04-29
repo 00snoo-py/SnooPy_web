@@ -12,6 +12,7 @@ import Goorm from '/imgs/goorm.jpg'
 import CodeFair2022  from '/imgs/codefair_2022.jpg'
 import GCD_BG from '/imgs/gcd.png'
 import Suzume_BG from '/imgs/suzume.jpg'
+import Dohe_BG from '/imgs/dohe_bg.jpg'
 
 function App() {
 
@@ -53,147 +54,152 @@ function App() {
     <>
       { profileWindow === '김정윤' ?
         <div className={style.window_contain}>
-          <div className={style.window}>
-            <img className={style.header_img} src={GCD_BG} alt="" />
-            <div className={style.window_header}>
-              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/108207397?v=4" alt="" />
-              <div className="">
-                <div className={style.window_name}>김정윤</div>
-                <a href="https://github.com/Leehomin11" target="_blank" className={style.window_github}>@GUCCUDAS</a>
-                <div className={style.window_about}>자기소개</div>
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>
+              <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+            </div>
+            <div className={style.window}>
+              <img className={style.header_img} src={GCD_BG} alt="" />
+              <div className={style.window_header}>
+                <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/108207397?v=4" alt="" />
+                <div className="">
+                  <div className={style.window_name}>김정윤</div>
+                  <a href="https://github.com/Leehomin11" target="_blank" className={style.window_github}>@GUCCUDAS</a>
+                  <div className={style.window_about}>자기소개</div>
+                </div>
+              </div>
+
+              <div className={style.window_contents}>
+                <div className={style.content_title}>역할</div>
+                <div className="">
+                  <div className={style.window_part}>Frontend Developer</div>
+                  <div className={style.window_part}>Secure Expert</div>
+                </div>
               </div>
             </div>
-
-            <div className={style.window_contents}>
-              <div className={style.content_title}>역할</div>
-              <div className="">
-                <div className={style.window_part}>Frontend Developer</div>
-                <div className={style.window_part}>Secure Expert</div>
-              </div>
-            </div>
-
-          </div>
-          <div className={style.window_menu}>
-            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
           </div>
         </div>
       : null }
       { profileWindow === '손보석' ?
         <div className={style.window_contain}>
-          <div className={style.window}>
-            <img className={style.header_img} src="https://static.solved.ac/profile_bg/hanbyeol_stars/hanbyeol_stars.jpg" alt="" />
-            <div className={style.window_header}>
-              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/51194584?v=4" alt="" />
-              <div className="">
-                <div className={style.window_name}>손보석</div>
-                <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@dya_only</a>
-                <div className={style.window_about}>풀스택 개발자를 목표로 공부중입니다.</div>
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>
+              <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+            </div>
+            <div className={style.window}>
+              <img className={style.header_img} src="https://static.solved.ac/profile_bg/hanbyeol_stars/hanbyeol_stars.jpg" alt="" />
+              <div className={style.window_header}>
+                <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/51194584?v=4" alt="" />
+                <div className="">
+                  <div className={style.window_name}>손보석</div>
+                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@dya_only</a>
+                  <div className={style.window_about}>풀스택 개발자를 목표로 공부중입니다</div>
+                </div>
+              </div>
+
+              <div className={style.window_contents}>
+                <div className={style.content_title}>역할</div>
+                <div className="">
+                  <div className={style.window_part}>FullStack Developer</div>
+                  <div className={style.window_part}>Cloud Architect</div>
+                  <div className={style.window_part}>Application Developer</div>
+                </div>
               </div>
             </div>
-
-            <div className={style.window_contents}>
-              <div className={style.content_title}>역할</div>
-              <div className="">
-                <div className={style.window_part}>FullStack Developer</div>
-                <div className={style.window_part}>Cloud Architect</div>
-                <div className={style.window_part}>Application Developer</div>
-              </div>
-            </div>
-
-          </div>
-          <div className={style.window_menu}>
-            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
           </div>
         </div>
       : null }
       { profileWindow === '김동영' ?
         <div className={style.window_contain}>
-          <div className={style.window}>
-            <img className={style.header_img} src={Suzume_BG} alt="" />
-            <div className={style.window_header}>
-              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/83718994?v=4" alt="" />
-              <div className="">
-                <div className={style.window_name}>김동영</div>
-                <a href="https://github.com/kairos-hk" target="_blank" className={style.window_github}>@kairos-hk</a>
-                <div className={style.window_about}>임베디드가 짱이다..</div>
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>
+              <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+            </div>
+            <div className={style.window}>
+              <img className={style.header_img} src={Suzume_BG} alt="" />
+              <div className={style.window_header}>
+                <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/83718994?v=4" alt="" />
+                <div className="">
+                  <div className={style.window_name}>김동영</div>
+                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@kairos-hk</a>
+                  <div className={style.window_about}>임베디드가 짱이다..</div>
+                </div>
+              </div>
+
+              <div className={style.window_contents}>
+                <div className={style.content_title}>역할</div>
+                <div className="">
+                  <div className={style.window_part}>Frontend Developer</div>
+                  <div className={style.window_part}>Data Analyst</div>
+                  <div className={style.window_part}>Embedded Engineer</div>
+                  <div className={style.window_part}>Secure Expert</div>
+                </div>
               </div>
             </div>
-
-            <div className={style.window_contents}>
-              <div className={style.content_title}>역할</div>
-              <div className="">
-                <div className={style.window_part}>Frontend Developer</div>
-                <div className={style.window_part}>Data Analyst</div>
-                <div className={style.window_part}>Embedded Engineer</div>
-                <div className={style.window_part}>Secure Expert</div>
-              </div>
-            </div>
-
-          </div>
-          <div className={style.window_menu}>
-            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
           </div>
         </div>
       : null }
       { profileWindow === '변예현' ?
         <div className={style.window_contain}>
-          <div className={style.window}>
-            <img className={style.header_img} src="https://38.media.tumblr.com/f0a1cb458b0f80304686f7dac3ebc5e6/tumblr_n750sqHBFZ1s5h198o1_500.gif" alt="" />
-            <div className={style.window_header}>
-              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
-              <div className="">
-                <div className={style.window_name}>변예현</div>
-                <a href="https://github.com/yehyun207" target="_blank" className={style.window_github}>@yehyun</a>
-                <div className={style.window_about}>밀양 변씨 원탑 개발자</div>
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>
+              <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+            </div>
+            <div className={style.window}>
+              <img className={style.header_img} src="https://38.media.tumblr.com/f0a1cb458b0f80304686f7dac3ebc5e6/tumblr_n750sqHBFZ1s5h198o1_500.gif" alt="" />
+              <div className={style.window_header}>
+                <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
+                <div className="">
+                  <div className={style.window_name}>변예현</div>
+                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@yehyun207</a>
+                  <div className={style.window_about}>밀양 변씨 원탑 개발자</div>
+                </div>
+              </div>
+
+              <div className={style.window_contents}>
+                <div className={style.content_title}>역할</div>
+                <div className="">
+                  <div className={style.window_part}>FullStack Developer</div>
+                </div>
               </div>
             </div>
-
-            <div className={style.window_contents}>
-              <div className={style.content_title}>역할</div>
-              <div className="">
-                <div className={style.window_part}>Frontend Developer</div>
-              </div>
-            </div>
-
-          </div>
-          <div className={style.window_menu}>
-            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
           </div>
         </div>
       : null }
       { profileWindow === '김도희' ?
         <div className={style.window_contain}>
-          <div className={style.window}>
-            <img className={style.header_img} src='' alt="" />
-            <div className={style.window_header}>
-              <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/126975038?v=4" alt="" />
-              <div className="">
-                <div className={style.window_name}>김도희</div>
-                <a href="https://github.com/dohe788" target="_blank" className={style.window_github}>@dohe788</a>
-                <div className={style.window_about}>무성애자 디자이너..</div>
+          <div className={style.window_menu_contain}>
+            <div className={style.window_menu}>
+              <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
+              <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
+            </div>
+            <div className={style.window}>
+              <img className={style.header_img} src={Dohe_BG} alt="" />
+              <div className={style.window_header}>
+                <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/126975038?v=4" alt="" />
+                <div className="">
+                  <div className={style.window_name}>김도희</div>
+                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@yehyun207</a>
+                  <div className={style.window_about}>제발 일반적으로 바꿔..</div>
+                </div>
+              </div>
+
+              <div className={style.window_contents}>
+                <div className={style.content_title}>역할</div>
+                <div className="">
+                  <div className={style.window_part}>Web & App Designer</div>
+                </div>
               </div>
             </div>
-
-            <div className={style.window_contents}>
-              <div className={style.content_title}>역할</div>
-              <div className="">
-                <div className={style.window_part}>Web & App Designer</div>
-              </div>
-            </div>
-
-          </div>
-          <div className={style.window_menu}>
-            <div onClick={() => setProfileWindow('')} className={style.window_close}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_y}></div>
-            <div onClick={() => setProfileWindow('')} className={style.window_close_g}></div>
           </div>
         </div>
       : null }
