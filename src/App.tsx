@@ -74,7 +74,7 @@ function App() {
               <div className={style.window_contents}>
                 <div className={style.content_title}>역할</div>
                 <div className="">
-                  <div className={style.window_part}>Frontend Developer</div>
+                  <div className={style.window_part}>Backend Developer</div>
                   <div className={style.window_part}>Secure Expert</div>
                 </div>
               </div>
@@ -127,7 +127,7 @@ function App() {
                 <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/83718994?v=4" alt="" />
                 <div className="">
                   <div className={style.window_name}>김동영</div>
-                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@kairos-hk</a>
+                  <a href="https://github.com/kairos-hk" target="_blank" className={style.window_github}>@kairos-hk</a>
                   <div className={style.window_about}>임베디드가 짱이다..</div>
                 </div>
               </div>
@@ -159,7 +159,7 @@ function App() {
                 <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/127202879?v=4" alt="" />
                 <div className="">
                   <div className={style.window_name}>변예현</div>
-                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@yehyun207</a>
+                  <a href="https://github.com/yehyun207" target="_blank" className={style.window_github}>@yehyun207</a>
                   <div className={style.window_about}>밀양 변씨 원탑 개발자</div>
                 </div>
               </div>
@@ -167,7 +167,7 @@ function App() {
               <div className={style.window_contents}>
                 <div className={style.content_title}>역할</div>
                 <div className="">
-                  <div className={style.window_part}>FullStack Developer</div>
+                  <div className={style.window_part}>Frontend Developer</div>
                 </div>
               </div>
             </div>
@@ -188,7 +188,7 @@ function App() {
                 <img className={style.header_profile} src="https://avatars.githubusercontent.com/u/126975038?v=4" alt="" />
                 <div className="">
                   <div className={style.window_name}>김도희</div>
-                  <a href="https://github.com/dya-only" target="_blank" className={style.window_github}>@yehyun207</a>
+                  <a href="https://github.com/dohe788" target="_blank" className={style.window_github}>@dohe788</a>
                   <div className={style.window_about}>제발 일반적으로 바꿔..</div>
                 </div>
               </div>
@@ -290,7 +290,7 @@ function App() {
           <div className={style.card}>
             <div className={style.img_contain}>
               <img className={style.card_img} src="https://avatars.githubusercontent.com/u/126975038?v=4" alt="" />
-              <div onClick={() => setProfileWindow('김도희')} className={style.card_info}>무성애자 디자이너</div>
+              <div onClick={() => setProfileWindow('김도희')} className={style.card_info}>PS 쓰는 디자이너</div>
             </div>
             <div className="">
               <div className={style.card_work}>Designer</div>
