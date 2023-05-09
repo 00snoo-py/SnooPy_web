@@ -1,8 +1,6 @@
 import { useState, useEffect } from 'react'
 import style from './App.module.css'
 
-// import SnooPy from '/imgs/snoo-py.png'
-// import Logo from '/imgs/snoo-py.png'
 import GBSW from '/imgs/symbol-white.png'
 import GBSW_ONLY from '/imgs/symbol-only.png'
 import Arrow from '/imgs/white-arrow.png'
@@ -32,19 +30,19 @@ function App() {
   }
   const getMembers = () => {
     window.scrollTo({
-      top: 1100,
+      top: 900,
       behavior: 'smooth',
     })
   }
   const getProjects = () => {
     window.scrollTo({
-      top: 2100,
+      top: 2700,
       behavior: 'smooth',
     })
   }
   const getAwards = () => {
     window.scrollTo({
-      top: 2700,
+      top: 3500,
       behavior: 'smooth',
     })
   }
